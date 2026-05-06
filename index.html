@@ -14,9 +14,10 @@
             <h1 class="logo">MyPortfolio</h1>
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about\">About</a></li>
+                <li><a href="#projects\">Projects</a></li>
+                <li><a href="#skills\">Skills</a></li>
+                <li><a href="#contact\">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +26,8 @@
     <section id="home" class="hero">
         <div class="hero-left">
             <h2>Hello, I'm <span>Luch Samart</span></h2>
-            <p>A professional Web Developer passionate about creating clean, modern websites.</p>
+            <p class="hero-subtitle">A professional Web Developer passionate about creating clean, modern websites that drive business results.</p>
+            <p class="hero-description">With expertise in HTML, CSS, JavaScript, and modern web technologies, I build responsive, user-friendly websites that leave a lasting impression. I focus on combining aesthetic design with functional excellence.</p>
 
             <div class="hero-buttons">
                 <button class="btn-primary" onclick="scrollToSection('projects')">View My Projects</button>
@@ -34,7 +36,7 @@
         </div>
 
         <div class="hero-right">
-            <img src="/image (3).png" class="hero-img" alt="Profile Photo">
+            <img src="/image.png" class="hero-img" alt="Profile Photo">
         </div>
     </section>
 
@@ -43,56 +45,132 @@
         <h2>About Me</h2>
 
         <div class="about-container">
-            <img src="/image (3).png" class="profile-img" alt="Profile Photo">
-            <p>
-                I am a web developer with strong skills in HTML, CSS, JavaScript, and UI/UX design.
-                I enjoy creating websites that are visually appealing and highly functional. I aim
-                to improve user experience through clean layouts and professional styling.
-            </p>
+            <img src="/image.png" class="profile-img" alt="Profile Photo">
+            <div class="about-text">
+                <p>
+                    I'm a passionate web developer dedicated to creating beautiful, functional digital experiences. With years of experience in front-end development, I specialize in building responsive websites that not only look stunning but also deliver exceptional user experiences.
+                </p>
+                <p>
+                    My approach combines creative design thinking with technical precision. I believe that every website should tell a story and engage visitors. Whether you need a portfolio site, a business website, or a custom web application, I'm here to bring your vision to life.
+                </p>
+                <p>
+                    When I'm not coding, I'm constantly learning new technologies and staying updated with the latest web development trends. My goal is to help businesses establish a strong online presence and connect with their audiences.
+                </p>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <h2>My Projects</h2>
+        <p class="section-subtitle">Here are some of my recent works showcasing my expertise in web development</p>
 
         <div class="project-grid">
 
             <div class="project-card">
                 <div class="project-image"></div>
-                <h3>Project 1</h3>
-                <p>A modern responsive website built using HTML, CSS, and JavaScript.</p>
+                <h3>E-Commerce Platform</h3>
+                <p>A fully responsive e-commerce website built with HTML, CSS, and JavaScript. Features include product filtering, shopping cart functionality, and smooth checkout process. Optimized for mobile and desktop devices.</p>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
                 <button class="project-btn">View More</button>
             </div>
 
             <div class="project-card">
                 <div class="project-image"></div>
-                <h3>Project 2</h3>
-                <p>A dashboard UI design inspired by professional admin systems.</p>
+                <h3>Admin Dashboard</h3>
+                <p>A professional admin dashboard UI design with data visualization, charts, and analytics. Built with modern styling and intuitive user interface. Perfect for managing business metrics and user data efficiently.</p>
+                <div class="project-tags">
+                    <span class="tag">UI/UX</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Responsive</span>
+                </div>
                 <button class="project-btn">View More</button>
             </div>
 
             <div class="project-card">
                 <div class="project-image"></div>
-                <h3>Project 3</h3>
-                <p>An interactive tool built using vanilla JavaScript and custom styling.</p>
+                <h3>Interactive Web App</h3>
+                <p>A dynamic web application built with vanilla JavaScript featuring real-time interactions, animations, and smooth transitions. Includes user authentication mock-up and comprehensive form validation.</p>
+                <div class="project-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Interactive</span>
+                    <span class="tag">Animations</span>
+                </div>
                 <button class="project-btn">View More</button>
             </div>
 
         </div>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <p class="section-subtitle">Technical expertise and competencies</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h4>Front-End Development</h4>
+                <p>HTML5, CSS3, JavaScript (ES6+), Responsive Design, Flexbox, CSS Grid</p>
+            </div>
+            <div class="skill-card">
+                <h4>Web Design</h4>
+                <p>UI/UX Design, Wireframing, Prototyping, Color Theory, Typography</p>
+            </div>
+            <div class="skill-card">
+                <h4>Tools & Platforms</h4>
+                <p>Git & GitHub, VS Code, Figma, Adobe XD, Chrome DevTools</p>
+            </div>
+            <div class="skill-card">
+                <h4>Performance</h4>
+                <p>Web Optimization, SEO Best Practices, Accessibility (a11y), Performance Testing</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Contact Me</h2>
+        <h2>Get In Touch</h2>
+        <p class="section-subtitle">Let's create something amazing together. Feel free to reach out with any questions or project ideas.</p>
 
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Message" required></textarea>
-            <button type="submit" class="btn-primary">Send Message</button>
-        </form>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Tell me about your project..." required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <div class="info-item">
+                    <h4>Email</h4>
+                    <p>contact@luchsamart.com</p>
+                </div>
+                <div class="info-item">
+                    <h4>Phone</h4>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="info-item">
+                    <h4>Location</h4>
+                    <p>City, Country</p>
+                </div>
+                <div class="social-links">
+                    <h4>Follow Me</h4>
+                    <div class="socials">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Luch Samart. All rights reserved. | Crafted with passion for web excellence.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
